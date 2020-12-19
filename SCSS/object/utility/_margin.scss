@@ -1,0 +1,56 @@
+.u-mb15 {
+  margin-bottom: 15px;
+}
+
+.u-mb7 {
+  margin-bottom: 7px;
+}
+
+.u-mb10 {
+  margin-bottom: 10px;
+}
+
+.u-mb15 {
+  margin-bottom: 15px;
+}
+
+.u-mb20 {
+  margin-bottom: 20px;
+}
+
+.u-mb25 {
+  margin-bottom: 25px;
+}
+
+.u-mb35 {
+  margin-bottom: 35px;
+}
+
+.u-mb50 {
+  margin-bottom: 50px;
+}
+
+.u-mb65 {
+  margin-bottom: 65px;
+}
+
+.u-mb35-pc {
+  @include breakpoint ( pc-wide ) {
+    margin-bottom: 50px;
+  }
+}
+
+.u-ml10 {
+  margin-left: 10px;
+}
+
+// mainタグで使用
+.u-mt50 {
+  margin-top: 50px;
+}
+
+.u-mt70__wide {
+  @include breakpoint ( wide ) {
+    margin-top: 70px;
+  }
+}

@@ -1,0 +1,10 @@
+
+.break {
+    &::before {
+      content: "\A";
+      white-space: pre;
+      @include breakpoint( pc-wide ) {
+        display: none;
+      }
+    }
+  }

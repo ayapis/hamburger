@@ -1,0 +1,52 @@
+// wrapのレイヤーは非常に迷ったが、「調整のための便利クラス」であるutillityが最適と判断しました。
+
+.c-wrap {
+  width: 95vw;
+  margin: auto;
+  max-width: 1078px;
+}
+
+.c-wrap-service {
+  @include breakpoint ( pc-wide ) {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 200;
+  }
+}
+
+.c-wrap-news {
+  border: 1px solid $color-border;
+}
+
+.c-wrap-feature {
+  @include breakpoint ( pc-wide ) {
+    display: flex;
+    justify-content: space-between;
+  }
+  &:nth-of-type(even) {
+    @include breakpoint ( pc-wide ) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.c-wrap-course {
+  background: #fff;
+  @include breakpoint ( pc-wide ) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.c-wrap-footer {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  padding: 13px 0px 35px;
+}
+
+.c-wrap-footer-sub {
+  display: flex;
+  flex-wrap: wrap;
+}
