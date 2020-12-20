@@ -1,21 +1,23 @@
 @mixin breakpoint( $point ) {
   @if $point == pc {
-    @media ( min-width: 768px ) and ( max-width:1199px) {
+    @media ( min-width: 769px ) {
       @content ;
     }
   }
-  @if $point == wide {
-    @media ( min-width: 1200px ) {
+  @if $point == ipad {
+    @media ( min-width: 376px ) and ( max-width: 768px ) {
       @content ;
     }
   }
-  @if $point == sp-pc {
-    @media ( max-width: 1119px ) {
+  // 使わなかったら消す
+  @if $point == sp-ipad {
+    @media ( max-width: 768px ) {
       @content ;
     }
   }
-  @if $point == pc-wide {
-    @media ( min-width: 768px ) {
+  // 使わなかったら消す
+  @if $point == ipad-pc {
+    @media ( min-width: 376px ) {
       @content ;
     }
   }
