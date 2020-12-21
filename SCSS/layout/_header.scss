@@ -8,6 +8,7 @@
   height: 200px;
   color: $color-menu;
   position: relative;
+  font-family: 'Roboto', sans-serif;
   // position: fixed;
   // top: 0;
   // left: 0;
@@ -22,6 +23,7 @@
 .l-header__title {
   font-size: 4.0rem;
   text-align: center;
+  font-weight: bold;
   // display: flex;
   // justify-content: space-between;
   // @include breakpoint ( wide ) {
@@ -30,6 +32,25 @@
   // a {
   //   display: flex;
   // }
+}
+
+.l-header__search {
+  display: flex;
+  justify-content: center;
+  input[type="submit"] {
+    width: 50px;
+    background: linear-gradient(180deg, #F2EDE9, #DED8D3);
+    border: 1px solid $color-menu;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+.l-header__search__box {
+  background: #fff;
+  border: 1px solid $color-menu;
+  border-radius: 5px;
+  size: 20;
 }
 
 .l-header__logo {

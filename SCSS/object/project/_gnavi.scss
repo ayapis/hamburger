@@ -1,18 +1,39 @@
+.p-gnavi {
+  color: $color-menu;
+}
+
+.p-gnavi__title {
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
 .p-gnavi__list {
-  display: flex;
-  position: relative;
-  z-index: 400;
-  @include breakpoint ( sp-pc ) {
-    display: none;
-  }
+  // display: none;
+  background: #F2EDE9;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 90vw;
+  height: 100vh;
+  font-family: "mplus-1m-regular";
+  padding-left: 25px;
+  // display: flex;
+  // position: relative;
+  // z-index: 400;
+  // @include breakpoint ( sp-pc ) {
+  //   display: none;
+  // }
 }
 
 .p-gnavi__subList {
-  display: none;
-  color: $color-text-2;
-  font-weight: 400;
-  background: $color-lightbg;
-  line-height: 50px;
+  font-size: 2.0rem;
+  // display: none;
+  // color: $color-text-2;
+  // font-weight: 400;
+  // background: $color-lightbg;
+  // line-height: 50px;
   @include breakpoint ( wide ) {
     position: absolute;
   }
@@ -24,19 +45,20 @@
     @include breakpoint ( wide ) {
       padding: 0 15px;
     }
-    &:hover {
-      background: $color-hover-3;
-      @include breakpoint ( wide ) {
-        color: $color-base_dark;
-        background: #fff;
-      }
-    }
+    // &:hover {
+    //   background: $color-hover-3;
+    //   @include breakpoint ( wide ) {
+    //     color: $color-base_dark;
+    //     background: #fff;
+    //   }
+    // }
   }
 }
 
 .p-gnavi__list__item {
-  color: $color-text-2;
+  // color: $color-text-2;
   // padding: 10px;
+  font-size: 2.4rem;
   @include breakpoint ( wide ) {
     line-height: 70px;
   }
@@ -94,16 +116,16 @@
       }
      }
   }
-  &:last-of-type {
-    color: #fff;
-    background: $color-base_dark;
-    a {
-      &:hover {
-        background: $color-base_dark;
-      }
-    }
+  // &:last-of-type {
+  //   color: #fff;
+  //   background: $color-base_dark;
+  //   a {
+  //     &:hover {
+  //       background: $color-base_dark;
+  //     }
+  //   }
   }
-}
+
 
 .p-gnavi__list__item-open {
   > a {

@@ -9,9 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- GoogleFontsの読み込み（内容は適宜変更） -->
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- M+ FONTSの読み込み（http://mplus-webfonts.osdn.jp/） -->
+    <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
 
     <!-- FontAwesomeの読み込み -->
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -23,14 +25,19 @@
   </head>
   <body>
     <header class="l-header">
-      <h1 class="l-header__title">Hamburger</h1>
-      <form id="form1" action="自分のサイトURL" method="get">
-        <input id="sbox1" id="s" name="s" type="text" placeholder="キーワードを入力" />
-        <input id="sbtn1" type="submit" value="検索" /></form>
+      <h1 class="l-header__title u-pd-tb25">Hamburger</h1>
+        <form method="get" action="#" class="l-header__search">
+          <div class="l-header__search__box u-mr10">
+            <i class="fas fa-search"></i>
+            <input type="text">
+          </div>
+          <input type="submit" value="検索">
+        </form>
       <nav class="p-gnavi">
-        <h2 class="p-gnavi__title">Menu</h2>
-        <ul class="p-gnavi__list">
-          <li class="c-item p-gnavi__list__item">バーガー
+        <button class="p-gnavi__title u-pd10">Menu</button>
+        <ul class="p-gnavi__list u-pd-t200">
+          <button class="c-button-close"><span>closeボタン</span></button>
+          <li class="p-gnavi__list__item">バーガー
             <ul class="p-gnavi__subList">
               <li><a href="#">ハンバーガー</a></li>
               <li><a href="#">チーズバーガー</a></li>
@@ -41,7 +48,7 @@
               <li><a href="#">チキンバーガー</a></li>
             </ul>
           </li>
-          <li class="c-item p-gnavi__list__item">サイド
+          <li class="p-gnavi__list__item">サイド
             <ul class="p-gnavi__subList">
               <li><a href="#">ポテト</a></li>
               <li><a href="#">サラダ</a></li>
@@ -49,7 +56,7 @@
               <li><a href="#">コーン</a></li>
             </ul>
           </li>
-          <li class="c-item p-gnavi__list__item">ドリンク
+          <li class="p-gnavi__list__item">ドリンク
             <ul class="p-gnavi__subList">
               <li><a href="#">コーラ</a></li>
               <li><a href="#">ファンタ</a></li>
