@@ -609,32 +609,31 @@ body {
 .c-button-close {
   width: 50px;
   height: 50px;
-  background: #000;
-  top: 0;
-  right: 0;
-  position: relative;
+  position: fixed;
+  top: 25px;
+  right: 25px;
 }
 
 .c-button-close::before, .c-button-close::after {
   content: "";
-  width: 20px;
-  height: 1px;
-  background: #fff;
+  width: 50px;
+  height: 6px;
+  background: #707070;
   position: absolute;
-  left: calc( 50% - ( 20px / 2 ));
+  left: calc( 50% - (  50px / 2 ));
   display: block;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .c-button-close::before {
-  top: 22px;
+  top: 25px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .c-button-close::after {
-  top: 38px;
+  top: 25px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .c-button-close > span {
