@@ -474,6 +474,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   font-family: "mplus-1m-regular";
+  overflow-x: hidden;
 }
 
 .l-footer {
@@ -547,23 +548,6 @@ body {
   size: 20;
 }
 
-.l-header__logo {
-  height: 30px;
-  width: auto;
-  margin: 10px;
-}
-
-.l-header__text {
-  color: #131D34;
-  font-size: 1.4rem;
-  font-weight: 900;
-  line-height: 1.3;
-}
-
-.l-header__text strong {
-  font-size: 1.8rem;
-}
-
 .c-banner {
   width: 95vw;
   max-width: 562px;
@@ -609,7 +593,7 @@ body {
 .c-button-close {
   width: 50px;
   height: 50px;
-  position: fixed;
+  position: absolute;
   top: 25px;
   right: 25px;
 }
@@ -940,13 +924,17 @@ body {
 
 .p-gnavi__title {
   font-weight: bold;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
 }
 
 .p-gnavi__list {
+  -webkit-transition: all 300ms 0s ease;
+  transition: all 300ms 0s ease;
+  left: 100%;
   background: #F2EDE9;
+  position: relative;
   position: fixed;
   top: 0px;
   right: 0px;
@@ -954,65 +942,20 @@ body {
   height: 100vh;
   font-family: "mplus-1m-regular";
   padding-left: 25px;
+  z-index: 100;
+}
+
+.p-gnavi__list.is-open {
+  left: inherit;
 }
 
 .p-gnavi__subList {
   font-size: 2.0rem;
-}
-
-.p-gnavi__subList a {
-  display: block;
-  width: 100%;
-  height: 100%;
   padding-left: 25px;
 }
 
 .p-gnavi__list__item {
   font-size: 2.4rem;
-}
-
-.p-gnavi__list__item > a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 10px 15px;
-  position: relative;
-}
-
-.p-gnavi__list__item > a:hover {
-  background: #f3fafb;
-}
-
-.p-gnavi__list__item > a::before {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 13px;
-  width: 24px;
-  height: 2px;
-  margin-top: -1px;
-  background-color: #121212;
-}
-
-.p-gnavi__list__item > a::after {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 24px;
-  width: 2px;
-  height: 24px;
-  margin-top: -12px;
-  background-color: #121212;
-}
-
-.p-gnavi__list__item:nth-of-type(3) > a::before {
-  display: none;
-}
-
-.p-gnavi__list__item:nth-of-type(3) > a::after {
-  display: none;
 }
 
 .p-gnavi__list__item-open > a::after {
