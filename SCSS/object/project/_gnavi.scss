@@ -1,16 +1,23 @@
 .p-gnavi {
   color: $color-menu;
+  @include breakpoint ( pc ) {
+    position: relative;
+  }
 }
 
 .p-gnavi__title {
-  font-weight: bold;
-  position: absolute;
-  top: 0;
-  right: 0;
+  // font-weight: bold;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  @include breakpoint ( pc ) {
+    z-index: 200;
+    top: 25px;
+    right: 0px;
+  }
 }
 
 .p-gnavi__list {
-  // display: none;
   transition: all 300ms 0s ease;
   left: 100%;
   background: #F2EDE9;
@@ -24,8 +31,12 @@
   padding-left: 25px;
   z-index: 100;
   &.is-open {
+    left: 10%;
+    overflow-y: scroll;
+  }
+  @include breakpoint ( pc ) {
     left: inherit;
-    // right: 0;
+    width: 20vw;
   }
   // display: flex;
   // position: relative;

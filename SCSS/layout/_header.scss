@@ -20,6 +20,22 @@
   // }
 }
 
+.l-header__top {
+  @include breakpoint ( pc ) {
+    width: 80vw;
+  }
+}
+
+.l-header__wrap {
+  @include breakpoint ( pc ) {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
 .l-header__title {
   font-size: 4.0rem;
   text-align: center;
@@ -37,6 +53,10 @@
 .l-header__search {
   display: flex;
   justify-content: center;
+  vertical-align: bottom;
+  @include breakpoint ( pc ) {
+    height: 40px;
+  }
   input[type="submit"] {
     width: 50px;
     background: linear-gradient(180deg, #F2EDE9, #DED8D3);

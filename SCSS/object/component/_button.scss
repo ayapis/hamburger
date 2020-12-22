@@ -54,4 +54,7 @@
   > span {
     font-size: 0;
   }
+  @include breakpoint ( pc ) {
+    display: none;
+  }
 }
