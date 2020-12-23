@@ -7,11 +7,12 @@
 
 .p-gnavi__title {
   // font-weight: bold;
-  // position: absolute;
-  // top: 0;
-  // right: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
   @include breakpoint ( pc ) {
-    z-index: 200;
+    position: fixed;
     top: 25px;
     right: 0px;
   }
@@ -27,9 +28,9 @@
   right: 0px;
   width: 90vw;
   height: 100vh;
-  font-family: "mplus-1m-regular";
+  // font-family: "mplus-1m-regular";
   padding-left: 25px;
-  z-index: 100;
+  // z-index: 100;
   &.is-open {
     left: 10%;
     overflow-y: scroll;
@@ -37,6 +38,8 @@
   @include breakpoint ( pc ) {
     left: inherit;
     width: 20vw;
+    height: 100%;
+    overflow: auto;
   }
   // display: flex;
   // position: relative;

@@ -473,7 +473,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
-  font-family: "mplus-1m-regular";
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 }
 
@@ -534,6 +534,7 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    position: relative;
   }
 }
 
@@ -568,11 +569,29 @@ body {
   text-align: center;
 }
 
+@media (min-width: 769px) {
+  .l-header__search input[type="submit"] {
+    height: 25px;
+    position: absolute;
+    top: calc(50% - 12.5px);
+    right: 50px;
+  }
+}
+
 .l-header__search__box {
   background: #fff;
   border: 1px solid #707070;
   border-radius: 5px;
   size: 20;
+}
+
+@media (min-width: 769px) {
+  .l-header__search__box {
+    height: 25px;
+    position: absolute;
+    top: calc(50% - 12.5px);
+    right: 100px;
+  }
 }
 
 .c-banner {
@@ -961,9 +980,16 @@ body {
   }
 }
 
+.p-gnavi__title {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
 @media (min-width: 769px) {
   .p-gnavi__title {
-    z-index: 200;
+    position: fixed;
     top: 25px;
     right: 0px;
   }
@@ -980,9 +1006,7 @@ body {
   right: 0px;
   width: 90vw;
   height: 100vh;
-  font-family: "mplus-1m-regular";
   padding-left: 25px;
-  z-index: 100;
 }
 
 .p-gnavi__list.is-open {
@@ -994,6 +1018,8 @@ body {
   .p-gnavi__list {
     left: inherit;
     width: 20vw;
+    height: 100%;
+    overflow: auto;
   }
 }
 
