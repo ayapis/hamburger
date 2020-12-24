@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
 
     <!-- FontAwesomeの読み込み -->
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- CSSの読み込み（slickは不要な場合もある） -->
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -24,25 +25,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <header class="l-header">
-      <div class="l-header__top">
-        <div class="l-header__wrap">
-          <h1 class="l-header__title">Hamburger</h1>
-          <form method="get" action="#" class="l-header__search">
-              <div class="l-header__search__box u-mr10">
-                <i class="fas fa-search"></i>
-                <input type="text">
-              </div>
-              <input type="submit" value="検索">
-          </form>
-        </div>
+    <div class="wrapA">
+      <div class="wrapB">
+        <header class="l-header">
+            <div class="l-header__wrap">
+              <h1 class="l-header__title">Hamburger</h1>
+              <form method="get" action="#" class="l-header__search">
+                  <input type="text" class="use_icon" placeholder="&#xf002;">
+                  <input type="submit" value="検索">
+              </form>
+            </div>
+        </header>
+        <main>
+          <section class="top">トップ</section>
+          <section class="takeout">テイクアウト</section>
+          <section class="eatin">イートイン</section>
+        </main>
       </div>
-      <nav class="p-gnavi">
-        <ul class="p-gnavi__list">
-          <button class="p-gnavi__title u-pd10">Menu</button>
-          <button class="c-button-close"><span>closeボタン</span></button>
-          <li class="p-gnavi__list__item u-pd-t200">バーガー
-            <ul class="p-gnavi__subList">
+      <aside>
+        <h2 class="">Menu</button>
+        <!-- <button class="c-button-close"><span>closeボタン</span></button> -->
+            <h3 class="">バーガー</h3>
+            <ul class="">
               <li><a href="#">ハンバーガー</a></li>
               <li><a href="#">チーズバーガー</a></li>
               <li><a href="#">テリヤキバーガー</a></li>
@@ -51,17 +55,15 @@
               <li><a href="#">ベーコンバーガー</a></li>
               <li><a href="#">チキンバーガー</a></li>
             </ul>
-          </li>
-          <li class="p-gnavi__list__item">サイド
-            <ul class="p-gnavi__subList">
+            <h3 class="">サイド</h3>
+            <ul class="">
               <li><a href="#">ポテト</a></li>
               <li><a href="#">サラダ</a></li>
               <li><a href="#">ナゲット</a></li>
               <li><a href="#">コーン</a></li>
             </ul>
-          </li>
-          <li class="p-gnavi__list__item">ドリンク
-            <ul class="p-gnavi__subList">
+            <h3 class="">ドリンク</h3>
+            <ul class="">
               <li><a href="#">コーラ</a></li>
               <li><a href="#">ファンタ</a></li>
               <li><a href="#">オレンジ</a></li>
@@ -69,10 +71,9 @@
               <li><a href="#">紅茶 (Ice/Hot)</a></li>
               <li><a href="#">コーヒー (Ice/Hot)</a></li>
             </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      </aside>
+    </div>
+    <footer>フッター</footer>
 
 
      <!-- slickの読み込み（不要な場合は削除） -->

@@ -35,3 +35,35 @@
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
+
+.use_icon{
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+aside {
+  color: $color-menu;
+  background: #F2EDE9;
+  width: 20%;
+}
+
+
+.wrapA {
+  display: flex;
+}
+
+.wrapB {
+  width: 100%;
+}
+
+main {
+  // background: #000;
+  // height: 100%;
+}
+
+footer {
+  background: green;
+}
