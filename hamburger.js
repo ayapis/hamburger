@@ -1,8 +1,19 @@
-jQuery( function( $ ){
-  $( ".p-gnavi__title" ).on( "click", function() {
-    $( ".p-gnavi__list" ).addClass( "is-open" );
-  } );
-  $( ".c-button-close" ).on( "click", function() {
-    $( ".p-gnavi__list" ).removeClass( "is-open" );
-  } );
-} );
+// jQuery( function( $ ){
+//   $( ".c-button-open" ).on( "click", function() {
+//     $( "aside" ).toggleClass( "is-open" );
+//     $( this ).toggleClass( "is-open" );
+//   } );
+// } );
+
+
+$(window).on('load resize', function(){
+  var w = $(window).width();
+  var x = 768;
+  if (w <= x) {
+//画面サイズが768px以下のときの処理
+    $( ".c-button-open" ).on( "click", function() {
+      $( "aside" ).toggleClass( "is-open" );
+      $( this ).toggleClass( "is-open" );
+    } );
+  }
+});

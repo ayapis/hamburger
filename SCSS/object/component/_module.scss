@@ -42,12 +42,35 @@
   font-style: normal;
   font-weight: normal;
   line-height: 1;
+  text-align: left;
 }
 
 aside {
+  position: fixed;
+  left: 100%;
   color: $color-menu;
   background: #F2EDE9;
   width: 20%;
+  &.is-open {
+    left: 10%;
+    width: 90%;
+    overflow-y: scroll;
+    @include breakpoint ( ipad ) {
+      left: 55%;
+      width: 45%;
+    }
+  }
+  @include breakpoint ( pc ) {
+    position: inherit;
+  }
+  h2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    @include breakpoint ( pc ) {
+      position: inherit;
+    }
+  }
 }
 
 

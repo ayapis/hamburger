@@ -22,12 +22,14 @@
 }
 
 .l-header__wrap {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+
   @include breakpoint ( pc ) {
     display: flex;
     justify-content: space-between;
-    width: 80%;
     max-width: 1200px;
-    margin: auto;
     // position: relative;
   }
 }

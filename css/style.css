@@ -516,6 +516,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.l-header__wrap {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
 @media (min-width: 769px) {
   .l-header__wrap {
     display: -webkit-box;
@@ -524,9 +530,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 80%;
     max-width: 1200px;
-    margin: auto;
   }
 }
 
@@ -647,6 +651,32 @@ body {
   }
 }
 
+.c-button-open.is-open {
+  color: #F2EDE9;
+}
+
+.c-button-open.is-open::before, .c-button-open.is-open::after {
+  content: "";
+  width: 50px;
+  height: 6px;
+  background: #707070;
+  position: absolute;
+  left: calc( 50% - (  50px / 2 ));
+  display: block;
+}
+
+.c-button-open.is-open::before {
+  top: 25px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.c-button-open.is-open::after {
+  top: 25px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .c-comment {
   color: #121212;
   line-height: 1.9;
@@ -756,12 +786,46 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
+  text-align: left;
 }
 
 aside {
+  position: fixed;
+  left: 100%;
   color: #707070;
   background: #F2EDE9;
   width: 20%;
+}
+
+aside.is-open {
+  left: 10%;
+  width: 90%;
+  overflow-y: scroll;
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  aside.is-open {
+    left: 55%;
+    width: 45%;
+  }
+}
+
+@media (min-width: 769px) {
+  aside {
+    position: inherit;
+  }
+}
+
+aside h2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+@media (min-width: 769px) {
+  aside h2 {
+    position: inherit;
+  }
 }
 
 .wrapA {
