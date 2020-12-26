@@ -12,7 +12,7 @@ $(window).on('load resize', function(){
   if (w <= x) {
 //画面サイズが768px以下のときの処理
     $( ".c-button-open" ).on( "click", function() {
-      $( "aside" ).toggleClass( "is-open" );
+      $( ".l-aside" ).toggleClass( "is-open" );
       $( this ).toggleClass( "is-open" );
     } );
   }
