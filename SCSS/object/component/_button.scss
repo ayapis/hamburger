@@ -27,39 +27,13 @@
   padding: 10px 20px;
 }
 
-.c-button-close {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  &::before,
-	&::after {
-		content   : "";
-		width     : 50px;
-		height    : 6px;
-		background: $color-menu;
-		position  : absolute;
-		left      : calc( 50% - (  50px / 2 ) );
-		display   : block;
-	}
-	&::before {
-    top: 25px;
-    transform: rotate(45deg);
-	}
-	&::after {
-    top: 25px;
-    transform: rotate(-45deg);
-  }
-  > span {
-    font-size: 0;
-  }
-  @include breakpoint ( pc ) {
-    display: none;
-  }
-}
-
 .c-button-open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  @include breakpoint ( pc ) {
+    position: inherit;
+  }
   &.is-open {
     color: #F2EDE9;
     &::before,
