@@ -1,5 +1,8 @@
 .c-box {
-  background: rgba(255, 255, 255, 0.6);
   width: 95%;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.c-box__content {
+  background: rgba(255, 255, 255, 0.6);
 }
