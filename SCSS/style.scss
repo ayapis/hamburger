@@ -5,11 +5,14 @@
 @import "foundation/_variable";
 
 // layout
+@import "layout/_aside";
+@import "layout/_content";
 @import "layout/_footer";
 @import "layout/_header";
 
 // component
 @import "object/component/_banner";
+@import "object/component/_box";
 @import "object/component/_button";
 @import "object/component/_comment";
 @import "object/component/_date";

@@ -477,6 +477,43 @@ body {
   overflow-x: hidden;
 }
 
+.l-aside {
+  position: fixed;
+  left: 100%;
+  color: #707070;
+  background: #F2EDE9;
+  width: 20%;
+}
+
+.l-aside.is-open {
+  left: 10%;
+  width: 90%;
+  overflow-y: scroll;
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .l-aside.is-open {
+    left: 55%;
+    width: 45%;
+  }
+}
+
+@media (min-width: 769px) {
+  .l-aside {
+    position: inherit;
+  }
+}
+
+.l-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-content__main {
+  width: 100%;
+}
+
 .l-footer {
   width: 100%;
   color: #fff;
@@ -506,16 +543,6 @@ body {
   color: #3C2A10;
   margin-top: 9px;
   float: right;
-}
-
-.l-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.l-content__main {
-  width: 100%;
 }
 
 .l-header {
@@ -582,33 +609,6 @@ body {
   border: 1px solid #707070;
 }
 
-.l-aside {
-  position: fixed;
-  left: 100%;
-  color: #707070;
-  background: #F2EDE9;
-  width: 20%;
-}
-
-.l-aside.is-open {
-  left: 10%;
-  width: 90%;
-  overflow-y: scroll;
-}
-
-@media (min-width: 376px) and (max-width: 768px) {
-  .l-aside.is-open {
-    left: 55%;
-    width: 45%;
-  }
-}
-
-@media (min-width: 769px) {
-  .l-aside {
-    position: inherit;
-  }
-}
-
 .c-banner {
   width: 95vw;
   max-width: 562px;
@@ -620,6 +620,12 @@ body {
     width: 45vw;
     max-width: 535px;
   }
+}
+
+.c-box {
+  background: rgba(255, 255, 255, 0.6);
+  width: 95%;
+  margin: auto;
 }
 
 .c-button {
@@ -769,15 +775,6 @@ footer {
   background: green;
 }
 
-.top {
-  background-image: url(..//images/mainvisu.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center -10px;
-  width: 100%;
-  height: 280px;
-}
-
 .c-navi_toggle {
   position: relative;
   width: 50px;
@@ -918,31 +915,38 @@ footer {
   max-width: 1078px;
 }
 
-.c-wrap-news {
-  border: 1px solid #C3C3C3;
+@media (min-width: 376px) and (max-width: 768px) {
+  .c-wrap-flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.c-wrap-course {
-  background: #fff;
+@media (min-width: 769px) {
+  .c-wrap-flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.c-wrap-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: left;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 13px 0px 35px;
+.c-wrap-takeout {
+  background-image: url(..//images/takeout.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 650px;
+  margin: 20px;
 }
 
-.c-wrap-footer-sub {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.c-wrap-eatin {
+  background-image: url(..//images/eatin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 650px;
+  margin: 20px;
 }
 
 .p-course {
@@ -970,48 +974,25 @@ footer {
 }
 
 .p-hero {
-  height: 320px;
-  background-image: url("../images/bg-hero3.png");
+  background-image: url(..//images/mainvisu_sp.png);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
+  width: 100%;
+  height: 270px;
 }
 
-.p-hero_layer1 {
-  position: absolute;
-  top: 0;
-  background-image: url("../images/bg-hero1.png");
-  width: 100%;
-  height: 100%;
-  background-position: center -30px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  z-index: 100;
+@media (min-width: 376px) and (max-width: 768px) {
+  .p-hero {
+    background-image: url(..//images/mainvisu_ipad.png);
+  }
 }
 
-.p-hero_layer2 {
-  position: absolute;
-  top: 0;
-  background-image: url("../images/bg-hero2.png");
-  width: 100%;
-  height: 100%;
-  background-position: center -30px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transition-property: background-position;
-  transition-property: background-position;
-  -webkit-transition-duration: .7s;
-          transition-duration: .7s;
-  -webkit-transition-delay: .035s;
-          transition-delay: .035s;
+@media (min-width: 769px) {
+  .p-hero {
+    background-image: url(..//images/mainvisu_pc.png);
+    height: 400px;
+  }
 }
 
 .p-news {

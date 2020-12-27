@@ -2,14 +2,6 @@
 // クラスではなく、idにしても支障がないか
 // 具体的には、index.htmlでクラス名を検索したときに検索結果が1つになることが条件
 
-.l-content {
-  display: flex;
-}
-
-.l-content__main {
-  width: 100%;
-}
-
 .l-header {
 	background: $color-base;
   width: 100%;
@@ -57,25 +49,5 @@
     line-height: 3rem;
     width: 5rem;
     border: 1px solid $color-menu;
-  }
-}
-
-.l-aside {
-  position: fixed;
-  left: 100%;
-  color: $color-menu;
-  background: #F2EDE9;
-  width: 20%;
-  &.is-open {
-    left: 10%;
-    width: 90%;
-    overflow-y: scroll;
-    @include breakpoint ( ipad ) {
-      left: 55%;
-      width: 45%;
-    }
-  }
-  @include breakpoint ( pc ) {
-    position: inherit;
   }
 }
