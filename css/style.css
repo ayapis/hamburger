@@ -515,34 +515,26 @@ body {
 }
 
 .l-footer {
-  width: 100%;
+  height: 150px;
+  background-image: url(../images/footer.png);
   color: #fff;
 }
 
-.l-footer__main {
+.l-footer-wrap {
+  width: 235px;
+  height: 100%;
+  margin: auto;
   text-align: center;
-  padding: 27px 0px;
-  background: #141E33;
-}
-
-.l-footer__main__info__name {
-  font-size: 1.4rem;
-  margin-top: 10px;
-}
-
-.l-footer__main__info__address {
-  font-size: 1.4rem;
-  margin-top: 10px;
-}
-
-.l-footer__sub {
-  color: #000;
-}
-
-.l-footer__sub small {
-  color: #3C2A10;
-  margin-top: 9px;
-  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .l-header {
@@ -823,11 +815,6 @@ body {
 
 .c-link a {
   text-decoration: underline;
-}
-
-footer {
-  background: green;
-  background-image: url(../images/footer);
 }
 
 .c-navi_toggle {

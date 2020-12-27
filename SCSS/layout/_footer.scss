@@ -3,52 +3,63 @@
 // 具体的には、index.htmlでクラス名を検索したときに検索結果が1つになることが条件
 
 .l-footer {
-  width: 100%;
+  height: 150px;
+  background-image: url(../images/footer.png);
   color: #fff;
 }
 
-.l-footer__main {
+.l-footer-wrap {
+  width: 235px;
+  height: 100%;
+  margin: auto;
   text-align: center;
-  padding: 27px 0px;
-  background: #141E33;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.l-footer__main__info {
-  @include breakpoint ( pc-wide ) {
-    display: flex;
-  }
-}
+// .l-footer__main {
+//   text-align: center;
+//   padding: 27px 0px;
+//   background: #141E33;
+// }
 
-.l-footer__main__info__name{
-  font-size: 1.4rem;
-  margin-top: 10px;
-  @include breakpoint ( pc-wide ) {
-    margin-left: 30px;
-  }
-}
+// .l-footer__main__info {
+//   @include breakpoint ( pc-wide ) {
+//     display: flex;
+//   }
+// }
 
-.l-footer__main__info__address {
-  font-size: 1.4rem;
-  margin-top: 10px;
-  @include breakpoint ( pc-wide ) {
-    margin-left: 14px;
-  }
-}
+// .l-footer__main__info__name{
+//   font-size: 1.4rem;
+//   margin-top: 10px;
+//   @include breakpoint ( pc-wide ) {
+//     margin-left: 30px;
+//   }
+// }
 
-.l-footer__sub {
-  color: #000;
-  @include breakpoint ( pc-wide ) {
-    height: 39px;
-    line-height: 39px;
-    display: flex;
-    justify-content: space-between;
-  }
-  small {
-    color: $color-text;
-    margin-top: 9px;
-    float: right;
-    @include breakpoint ( pc-wide ) {
-      margin-top: 0px;
-    }
-  }
-}
+// .l-footer__main__info__address {
+//   font-size: 1.4rem;
+//   margin-top: 10px;
+//   @include breakpoint ( pc-wide ) {
+//     margin-left: 14px;
+//   }
+// }
+
+// .l-footer__sub {
+//   color: #000;
+//   @include breakpoint ( pc-wide ) {
+//     height: 39px;
+//     line-height: 39px;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+//   small {
+//     color: $color-text;
+//     margin-top: 9px;
+//     float: right;
+//     @include breakpoint ( pc-wide ) {
+//       margin-top: 0px;
+//     }
+//   }
+// }
