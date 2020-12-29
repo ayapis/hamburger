@@ -665,15 +665,6 @@ body {
   }
 }
 
-.c-box {
-  width: 95%;
-  margin: 0 auto;
-}
-
-.c-box__content {
-  background: rgba(255, 255, 255, 0.6);
-}
-
 .c-button {
   display: inline-block;
   font-weight: 700;
@@ -939,10 +930,14 @@ body {
   left: 0;
 }
 
+.c-title-box {
+  font-size: 2.2rem;
+}
+
 .c-wrap {
   width: 80%;
   margin: auto;
-  max-width: 1078px;
+  max-width: 1200px;
 }
 
 @media (min-width: 376px) and (max-width: 768px) {
@@ -958,6 +953,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -966,7 +964,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 650px;
   margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -980,12 +977,24 @@ body {
           justify-content: space-between;
 }
 
+@media (min-width: 376px) and (max-width: 768px) {
+  .c-wrap-takeout {
+    margin-right: 3%;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-wrap-takeout {
+    margin-right: 3%;
+    max-width: 500px;
+  }
+}
+
 .c-wrap-eatin {
   background-image: url(../images/eatin.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 650px;
   margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,6 +1006,28 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .c-wrap-eatin {
+    margin-left: 3%;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-wrap-eatin {
+    margin-left: 3%;
+    max-width: 500px;
+  }
+}
+
+.p-box {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.p-box__content {
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .p-course {
@@ -1156,6 +1187,10 @@ body {
   margin-bottom: 20px;
 }
 
+.u-mb23 {
+  margin-bottom: 23px;
+}
+
 .u-mb25 {
   margin-bottom: 25px;
 }
@@ -1225,5 +1260,13 @@ body {
 
 .u-pd10 {
   padding: 10px;
+}
+
+.u-pd-box {
+  padding: 2.4rem 1.0rem;
+}
+
+.u-aspectRatio {
+  padding-top: 100%;
 }
 /*# sourceMappingURL=style.css.map */

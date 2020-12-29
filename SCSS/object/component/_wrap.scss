@@ -3,7 +3,7 @@
 .c-wrap {
   width: 80%;
   margin: auto;
-  max-width: 1078px;
+  max-width: 1200px;
 }
 
 .c-wrap-flexbox {
@@ -12,6 +12,7 @@
   }
   @include breakpoint ( pc ) {
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -20,22 +21,35 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 650px;
   margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include breakpoint ( ipad ) {
+    margin-right: 3%;
+  }
+  @include breakpoint ( pc ) {
+    margin-right: 3%;
+    max-width: 500px;
+  }
 }
+
 .c-wrap-eatin {
   background-image: url(../images/eatin.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 650px;
   margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include breakpoint ( ipad ) {
+    margin-left: 3%;
+  }
+  @include breakpoint ( pc ) {
+    margin-left: 3%;
+    max-width: 500px;
+  }
 }
 
 // .c-wrap-service {

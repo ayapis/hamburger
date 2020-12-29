@@ -12,7 +12,6 @@
 
 // component
 @import "object/component/_banner";
-@import "object/component/_box";
 @import "object/component/_button";
 @import "object/component/_comment";
 @import "object/component/_date";
@@ -26,6 +25,7 @@
 @import "object/component/_wrap";
 
 // project
+@import "object/project/_box";
 @import "object/project/_course";
 @import "object/project/_feature";
 @import "object/project/_hero";
