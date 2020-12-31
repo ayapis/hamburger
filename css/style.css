@@ -701,6 +701,7 @@ body {
 }
 
 .c-button-open {
+  color: #707070;
   font-size: 2rem;
   position: fixed;
   top: 15px;
