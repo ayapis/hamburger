@@ -512,6 +512,28 @@ body {
   line-height: 4rem;
 }
 
+.l-aside__title {
+  width: 100vw;
+  height: 80px;
+  background: #FFF7EF;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  padding: 20px;
+}
+
+@media (min-width: 769px) {
+  .l-aside__title {
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    position: inherit;
+    text-align: inherit;
+    padding: inherit;
+  }
+}
+
 .l-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,7 +570,7 @@ body {
 .l-header {
   background: #FFF7EF;
   width: 100%;
-  height: 200px;
+  height: 250px;
   color: #707070;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -705,22 +727,24 @@ body {
 .c-button-open {
   color: #707070;
   font-size: 2rem;
-  position: fixed;
-  top: 15px;
-  right: 15px;
 }
 
 @media (min-width: 769px) {
   .c-button-open {
     position: inherit;
+    padding-top: 60px;
+    padding-left: 40px;
   }
 }
 
-.c-button-open.is-open {
+.c-button-close.is-open {
   color: #F2EDE9;
+  position: fixed;
+  top: 15px;
+  right: 25px;
 }
 
-.c-button-open.is-open::before, .c-button-open.is-open::after {
+.c-button-close.is-open::before, .c-button-close.is-open::after {
   content: "";
   width: 50px;
   height: 6px;
@@ -730,13 +754,13 @@ body {
   display: block;
 }
 
-.c-button-open.is-open::before {
+.c-button-close.is-open::before {
   top: 25px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.c-button-open.is-open::after {
+.c-button-close.is-open::after {
   top: 25px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -1129,7 +1153,7 @@ body {
 
 @media (min-width: 769px) {
   .p-map__layer1 {
-    width: 65vw;
+    width: 50%;
   }
 }
 
@@ -1153,7 +1177,7 @@ body {
 
 @media (min-width: 769px) {
   .p-map__content {
-    width: 65vw;
+    width: 50%;
   }
 }
 
@@ -1355,5 +1379,15 @@ body {
 
 .u-aspectRatio {
   padding-top: 100%;
+}
+
+.u-menu {
+  padding-top: 200px;
+}
+
+@media (min-width: 769px) {
+  .u-menu {
+    padding-top: 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

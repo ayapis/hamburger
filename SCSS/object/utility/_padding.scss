@@ -56,3 +56,10 @@
 .u-aspectRatio {
   padding-top: 100%;
 }
+
+.u-menu {
+  padding-top: 200px;
+  @include breakpoint ( pc ) {
+    padding-top: 60px;
+  }
+}
