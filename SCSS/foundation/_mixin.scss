@@ -15,7 +15,6 @@
       @content ;
     }
   }
-  // 使わなかったら消す
   @if $point == ipad-pc {
     @media ( min-width: 376px ) {
       @content ;

@@ -4,6 +4,14 @@
 
 .c-title-hero {
   font-size: 3.6rem;
+  line-height: 2rem;
+  span {
+    font-size: 1.6rem;
+    font-weight: 100;
+    @include breakpoint ( ipad-pc ) {
+      vertical-align: middle;
+    }
+  }
 }
 
 .c-title-takeout {

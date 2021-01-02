@@ -50,6 +50,11 @@
 .u-ml10 {
   margin-left: 10px;
 }
+.u-ml20-ipadPc {
+  @include breakpoint ( ipad-pc ) {
+    margin-left: 20px;
+  }
+}
 
 // mainタグで使用
 .u-mt50 {

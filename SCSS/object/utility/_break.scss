@@ -1,9 +1,8 @@
-
-.break {
+.u-break {
     &::before {
       content: "\A";
       white-space: pre;
-      @include breakpoint( pc-wide ) {
+      @include breakpoint( ipad-pc ) {
         display: none;
       }
     }
