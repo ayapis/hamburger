@@ -682,6 +682,10 @@ body {
   }
 }
 
+.l-main {
+  background: #FFFDFA;
+}
+
 .c-banner {
   width: 95vw;
   max-width: 562px;
@@ -977,6 +981,11 @@ body {
 }
 
 .c-wrap {
+  width: 90%;
+  margin: auto;
+}
+
+.c-wrap-hero {
   width: 80%;
   margin: auto;
   max-width: 1200px;
@@ -1087,6 +1096,15 @@ body {
   height: 1400px;
   margin-top: -170px;
   z-index: 0;
+}
+
+.p-archive img {
+  width: 100%;
+}
+
+.p-archive__intro {
+  color: #fff;
+  background: #3C2B1C;
 }
 
 .p-box {
