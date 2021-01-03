@@ -62,6 +62,13 @@
   padding: 2.4rem 1.0rem;
 }
 
+.u-pd-box-archive {
+  padding: 2.4rem 2rem;
+  @include breakpoint ( ipad-pc ) {
+    padding: 2.4rem 3.5rem;
+  }
+}
+
 .u-aspectRatio {
   padding-top: 100%;
 }

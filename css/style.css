@@ -989,12 +989,13 @@ body {
   font-size: 2.8rem;
 }
 
-.c-wrap {
-  width: 90%;
-  margin: auto;
+@media (min-width: 376px) and (max-width: 768px) {
+  .c-title-archive {
+    font-size: 3.6rem;
+  }
 }
 
-.c-wrap-hero {
+.c-wrap {
   width: 80%;
   margin: auto;
   max-width: 1200px;
@@ -1108,7 +1109,15 @@ body {
 }
 
 .p-archive img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+}
+
+@media (min-width: 376px) {
+  .p-archive img {
+    width: 50%;
+  }
 }
 
 .p-archive__intro {
@@ -1450,6 +1459,16 @@ body {
 
 .u-pd-box {
   padding: 2.4rem 1.0rem;
+}
+
+.u-pd-box-archive {
+  padding: 2.4rem 2rem;
+}
+
+@media (min-width: 376px) {
+  .u-pd-box-archive {
+    padding: 2.4rem 3.5rem;
+  }
 }
 
 .u-aspectRatio {

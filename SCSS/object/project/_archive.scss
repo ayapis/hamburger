@@ -1,6 +1,10 @@
 .p-archive {
   img {
+    object-fit: cover;
     width: 100%;
+    @include breakpoint ( ipad-pc ) {
+      width: 50%;
+    }
   }
 }
 
