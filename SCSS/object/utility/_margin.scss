@@ -25,6 +25,9 @@
   margin-bottom: 25px;
 }
 
+.u-mb30 {
+  margin-bottom: 30px;
+}
 .u-mb35 {
   margin-bottom: 35px;
 }
@@ -54,6 +57,7 @@
 .u-ml10 {
   margin-left: 10px;
 }
+
 .u-ml20-ipadPc {
   @include breakpoint ( ipad-pc ) {
     margin-left: 20px;

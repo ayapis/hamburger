@@ -722,6 +722,7 @@ body {
 }
 
 .c-button-more {
+  display: block;
   width: 50%;
   color: #707070;
   text-align: center;
@@ -984,6 +985,10 @@ body {
   left: 0;
 }
 
+.c-title-archive {
+  font-size: 2.8rem;
+}
+
 .c-wrap {
   width: 90%;
   margin: auto;
@@ -1109,6 +1114,14 @@ body {
 .p-archive__intro {
   color: #fff;
   background: #3C2B1C;
+}
+
+.p-archive__intro h4 {
+  font-size: 2rem;
+}
+
+.p-archive__intro p {
+  width: 80%;
 }
 
 .p-box {
@@ -1338,6 +1351,10 @@ body {
   margin-bottom: 25px;
 }
 
+.u-mb30 {
+  margin-bottom: 30px;
+}
+
 .u-mb35 {
   margin-bottom: 35px;
 }
@@ -1386,6 +1403,10 @@ body {
 
 .u-pd-t200 {
   padding-top: 200px;
+}
+
+.u-pd-archiveMenu {
+  padding: 35px 45px;
 }
 
 .u-pd-b40 {

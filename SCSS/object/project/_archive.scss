@@ -7,4 +7,10 @@
 .p-archive__intro {
   color: #fff;
   background: $color-bg;
+  h4 {
+    font-size: 2rem;
+  }
+  p {
+    width: 80%;
+  }
 }
