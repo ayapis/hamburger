@@ -981,12 +981,12 @@ body {
   left: 0;
 }
 
-.c-title-archive {
+.c-title-menu {
   font-size: 2.8rem;
 }
 
 @media (min-width: 376px) and (max-width: 768px) {
-  .c-title-archive {
+  .c-title-menu {
     font-size: 3.6rem;
   }
 }
@@ -1104,28 +1104,28 @@ body {
   z-index: 0;
 }
 
-.p-archive img {
+.p-menu img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 
 @media (min-width: 376px) {
-  .p-archive img {
+  .p-menu img {
     width: 50%;
   }
 }
 
-.p-archive__intro {
+.p-menu__intro {
   color: #fff;
   background: #3C2B1C;
 }
 
-.p-archive__intro h4 {
+.p-menu__intro h4 {
   font-size: 2rem;
 }
 
-.p-archive__intro p {
+.p-menu__intro p {
   width: 80%;
 }
 
