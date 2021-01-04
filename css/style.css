@@ -525,12 +525,7 @@ body {
 
 @media (min-width: 769px) {
   .l-aside__title {
-    width: inherit;
-    height: inherit;
-    background: inherit;
-    position: inherit;
-    text-align: inherit;
-    padding: inherit;
+    all: inherit;
   }
 }
 

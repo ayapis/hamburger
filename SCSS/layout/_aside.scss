@@ -40,11 +40,6 @@
   text-align: right;
   padding: 20px;
   @include breakpoint ( pc ) {
-    width: inherit;
-    height: inherit;
-    background: inherit;
-    position: inherit;
-    text-align: inherit;
-    padding: inherit;
+    all: inherit;
   }
 }
