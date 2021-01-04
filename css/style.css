@@ -1470,12 +1470,12 @@ body {
   padding-top: 100%;
 }
 
-.u-menu {
+.u-pd-aside {
   padding-top: 200px;
 }
 
 @media (min-width: 769px) {
-  .u-menu {
+  .u-pd-aside {
     padding-top: 60px;
   }
 }
