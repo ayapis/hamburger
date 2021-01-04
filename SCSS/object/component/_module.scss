@@ -1,71 +1,106 @@
 // ページネーション自体が中央にくるように
-.pager  ul.pagination {
-  text-align: center;
+.pagination {
+  height: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   @include breakpoint ( ipad-pc ) {
-    display: inherit;
-  }
-}
-
-// liは原則SP版では非表示にする
-.pager .pagination li{
-  display: none;
-  @include breakpoint ( ipad-pc ) {
-    color: $color-menu;
-    background:#fff;
-    border: 1px solid $color-menu;
-    display: inline-block;
-    margin: 0 2px;
-    width: 35px;
-    height: 35px;
+    justify-content: center;
     text-align: center;
   }
+  // liは原則SP版では非表示にする
+  li {
+    display: none;
+    @include breakpoint ( ipad-pc ) {
+      color: $color-menu;
+      background:#fff;
+      border: 1px solid $color-menu;
+      display: inline-block;
+      margin: 0 2px;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+    }
+    a {
+      &:hover {
+        background: $color-bg;
+        color: #fff;
+      }
+      &:active {
+        background: $color-bg;
+        color: #fff;
+      }
+    }
+  }
 }
 
-.pager .pagination li.pre,
-.pager .pagination li.next{
-  color: $color-menu;
-  display: inline-block;
-  height: 35px;
-  border: inherit;
-  margin: 0 2px;
+
+.pager .pagination li.number{
+  display: none;
   @include breakpoint ( ipad-pc ) {
-    width: 35px;
-    span {
-      font-size: 3rem;
-      line-height: 3rem;
+    // width: 35px;
+    display: inline-block;
+    width: auto;
+    border: inherit;
+  }
+  // 送り記号はホバー時に背景を変更しない
+  a {
+    &:hover {
+      color: inherit;
+      background: inherit;
     }
   }
 }
 
 .pager .pagination li a{
+  display: inline-block;
   width: 100%;
   height: 100%;
-  display:table;
+  // vertical-align: middle;
+  // display: table;
 }
 
-.pager .pagination li a span{
-  display:table-cell;
-  vertical-align:middle;
-}
+// .pager .pagination li a:hover,
+// .pager .pagination li a.active{
+//   color: #fff;
+//   background: $color-bg;
+// }
 
-.pager .pagination li a:hover,
-.pager .pagination li a.active{
-  color: #fff;
-  background: $color-bg;
-}
-
-.pager .pagination li.pre span::after{
-  content: "　前へ";
-  @include breakpoint ( ipad-pc ) {
-    display: none;
+li.pre {
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 3rem;
+  background: inherit;
+  border: inherit;
+  a{
+    &::after {
+      content: "　前へ";
+      @include breakpoint ( ipad-pc ) {
+        display: none;
+      }
+    }
+    &:hover {
+      color: #000;
+      background: inherit;
+    }
   }
 }
-
-.pager .pagination li.next span::before{
-  content: "次へ　";
-  @include breakpoint ( ipad-pc ) {
-    display: none;
-  }
+li.next {
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 3rem;
+  background: inherit;
+  border: inherit;
+  a{
+    &::before{
+      content: "　次へ";
+      @include breakpoint ( ipad-pc ) {
+        display: none;
+      }
+    }
+    &:hover {
+      color: #000;
+      background: inherit;
+    }
+}
 }
