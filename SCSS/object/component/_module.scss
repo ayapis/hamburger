@@ -26,7 +26,7 @@
         background: $color-bg;
         color: #fff;
       }
-      &:active {
+      &.active {
         background: $color-bg;
         color: #fff;
       }
@@ -68,10 +68,12 @@
 
 li.pre {
   display: inline-block;
-  font-size: 3rem;
-  line-height: 3rem;
   background: inherit;
   border: inherit;
+  @include breakpoint ( ipad-pc ) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
   a{
     &::after {
       content: "　前へ";
@@ -87,10 +89,12 @@ li.pre {
 }
 li.next {
   display: inline-block;
-  font-size: 3rem;
-  line-height: 3rem;
   background: inherit;
   border: inherit;
+  @include breakpoint ( ipad-pc ) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
   a{
     &::before{
       content: "　次へ";

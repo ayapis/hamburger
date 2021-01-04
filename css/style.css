@@ -891,7 +891,7 @@ body {
   color: #fff;
 }
 
-.pagination li a:active {
+.pagination li a.active {
   background: #3C2B1C;
   color: #fff;
 }
@@ -921,10 +921,15 @@ body {
 
 li.pre {
   display: inline-block;
-  font-size: 3rem;
-  line-height: 3rem;
   background: inherit;
   border: inherit;
+}
+
+@media (min-width: 376px) {
+  li.pre {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 
 li.pre a::after {
@@ -944,10 +949,15 @@ li.pre a:hover {
 
 li.next {
   display: inline-block;
-  font-size: 3rem;
-  line-height: 3rem;
   background: inherit;
   border: inherit;
+}
+
+@media (min-width: 376px) {
+  li.next {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
 }
 
 li.next a::before {
