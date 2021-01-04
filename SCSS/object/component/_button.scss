@@ -36,6 +36,7 @@
   color: $color-menu;
   font-size: 2rem;
   @include breakpoint ( pc ) {
+    cursor: default;
     position: inherit;
     padding-top: 60px;
     padding-left: 40px;
