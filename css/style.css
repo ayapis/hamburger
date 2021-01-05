@@ -741,7 +741,7 @@ body {
 
 .c-button-more {
   display: block;
-  width: 70%;
+  width: 60%;
   color: #707070;
   text-align: center;
   margin: auto;
@@ -749,6 +749,12 @@ body {
   border: 1px solid #fff;
   border-radius: 50px;
   padding: 10px 40px;
+}
+
+@media (min-width: 769px) {
+  .c-button-more {
+    padding: 20px 0;
+  }
 }
 
 .c-button-open {
@@ -1127,31 +1133,6 @@ body {
   z-index: 0;
 }
 
-.p-menu img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-
-@media (min-width: 376px) {
-  .p-menu img {
-    width: 50%;
-  }
-}
-
-.p-menu__intro {
-  color: #fff;
-  background: #3C2B1C;
-}
-
-.p-menu__intro h4 {
-  font-size: 2rem;
-}
-
-.p-menu__intro p {
-  width: 80%;
-}
-
 .p-box {
   width: 95%;
   margin: 0 auto;
@@ -1258,6 +1239,54 @@ body {
 
 .p-map__comment {
   line-height: 4rem;
+}
+
+.p-menu img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+@media (min-width: 376px) {
+  .p-menu img {
+    width: 50%;
+  }
+}
+
+.p-menu__intro {
+  color: #fff;
+  background: #3C2B1C;
+}
+
+.p-menu__intro h4 {
+  font-size: 2rem;
+}
+
+@media (min-width: 769px) {
+  .p-menu__intro h4 {
+    font-size: 3.6rem;
+  }
+}
+
+.p-menu__intro h5 {
+  line-height: 2.5;
+}
+
+@media (min-width: 769px) {
+  .p-menu__intro h5 {
+    font-size: 2.4rem;
+    line-height: 2;
+  }
+}
+
+.p-menu__intro p {
+  width: 80%;
+}
+
+@media (min-width: 376px) {
+  .p-menu__intro p {
+    width: 95%;
+  }
 }
 
 .p-news {
@@ -1527,6 +1556,22 @@ li.p-pagination__next a::before {
   margin-top: 50px;
 }
 
+.u-mb-menu {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+  .u-mb-menu {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  .u-mb-menu {
+    margin-bottom: 60px;
+  }
+}
+
 .u-pd-rl8px {
   padding: 0px 8px;
 }
@@ -1594,9 +1639,15 @@ li.p-pagination__next a::before {
   padding: 5rem 2rem;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 376px) and (max-width: 768px) {
   .u-pd-box-archive {
     padding: 2.4rem 3.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .u-pd-box-archive {
+    padding: 5rem 3.5rem;
   }
 }
 

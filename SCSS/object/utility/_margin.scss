@@ -74,3 +74,13 @@
     margin-top: 70px;
   }
 }
+
+.u-mb-menu {
+  margin-bottom: 20px;
+  @include breakpoint ( ipad ) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint ( pc ) {
+    margin-bottom: 60px;
+  }
+}
