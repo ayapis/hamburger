@@ -563,6 +563,28 @@ body {
           justify-content: center;
 }
 
+.l-footer-wrap div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.l-footer-wrap a + a {
+  position: relative;
+}
+
+.l-footer-wrap a + a::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -15px;
+  width: 2px;
+  height: 13px;
+  background: #fff;
+}
+
 .l-header {
   background: #FFF7EF;
   width: 100%;
