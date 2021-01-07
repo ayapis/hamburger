@@ -1,0 +1,29 @@
+.p-single {
+  color: $color-text;
+  blockquote {
+    background: #F5F5F5;
+    padding: 30px 15px;
+    cite {
+      font-style: normal;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.p-single-intro {
+  display: flex;
+  justify-content: space-between;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  img {
+    width: 40%;
+    height: 100px;
+    object-fit: cover;
+  }
+  p {
+    width: 50%;
+  }
+}

@@ -198,9 +198,17 @@
   }
 }
 
-.c-title-menu {
+.c-title-menu, .c-title-single {
   font-size: 2.8rem;
   @include breakpoint ( ipad ) {
     font-size: 3.6rem;
   }
+}
+
+.c-title-single__smaller {
+  font-size: 2.4rem;
+}
+
+.c-title-single__smallest {
+  font-size: 2.0rem;
 }
