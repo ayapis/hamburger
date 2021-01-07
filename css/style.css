@@ -1287,22 +1287,22 @@ body {
   background: #3C2B1C;
 }
 
-.p-menu__intro h4 {
+.p-menu__intro h3 {
   font-size: 2rem;
 }
 
 @media (min-width: 769px) {
-  .p-menu__intro h4 {
+  .p-menu__intro h3 {
     font-size: 3.6rem;
   }
 }
 
-.p-menu__intro h5 {
+.p-menu__intro h4 {
   line-height: 2.5;
 }
 
 @media (min-width: 769px) {
-  .p-menu__intro h5 {
+  .p-menu__intro h4 {
     font-size: 2.4rem;
     line-height: 2;
   }
