@@ -18,10 +18,13 @@
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
-  img {
+  div {
     width: 40%;
-    height: 100px;
-    object-fit: cover;
+    img {
+      // width: 40%;
+      // padding-bottom: 61%;
+      object-fit: cover;
+    }
   }
   p {
     width: 50%;

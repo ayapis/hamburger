@@ -1493,9 +1493,11 @@ li.p-pagination__next a::before {
           flex-direction: row-reverse;
 }
 
-.p-single-intro img {
+.p-single-intro div {
   width: 40%;
-  height: 100px;
+}
+
+.p-single-intro div img {
   -o-object-fit: cover;
      object-fit: cover;
 }
