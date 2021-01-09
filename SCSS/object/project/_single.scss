@@ -1,6 +1,6 @@
 .p-single {
   color: $color-text;
-  blockquote {
+  blockquote, pre {
     background: #F5F5F5;
     padding: 30px 15px;
     cite {
@@ -9,6 +9,18 @@
   }
   img {
     width: 100%;
+  }
+  table {
+    width: 100%;
+    td {
+      border: 1px solid #000;
+      height: 80px;
+      vertical-align: middle;
+      padding-left: 30px;
+      &:first-child {
+        width: 40%;
+      }
+    }
   }
 }
 

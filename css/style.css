@@ -1464,17 +1464,32 @@ li.p-pagination__next a::before {
   color: #3C2A10;
 }
 
-.p-single blockquote {
+.p-single blockquote, .p-single pre {
   background: #F5F5F5;
   padding: 30px 15px;
 }
 
-.p-single blockquote cite {
+.p-single blockquote cite, .p-single pre cite {
   font-style: normal;
 }
 
 .p-single img {
   width: 100%;
+}
+
+.p-single table {
+  width: 100%;
+}
+
+.p-single table td {
+  border: 1px solid #000;
+  height: 80px;
+  vertical-align: middle;
+  padding-left: 30px;
+}
+
+.p-single table td:first-child {
+  width: 40%;
 }
 
 .p-single-intro {
