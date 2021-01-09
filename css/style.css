@@ -1533,6 +1533,11 @@ li.p-pagination__next a::before {
   }
 }
 
+.p-single-list ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
 .p-top {
   width: 100%;
   padding: 23px 0px 13px;
