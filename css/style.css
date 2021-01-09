@@ -1148,6 +1148,13 @@ body {
   padding: 2.4rem 1.0rem;
 }
 
+.p-box__content p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 .p-course {
   width: 100vw;
   background: -webkit-gradient(linear, left top, right top, from(#f3fafb), to(#e9f8fb));
