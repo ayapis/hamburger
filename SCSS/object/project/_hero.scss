@@ -16,13 +16,7 @@
   }
 }
 .p-hero-single {
-  display: flex;
-  align-items: center;
   background-image: url(..//images/single.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
   height: 200px;
   @include breakpoint ( ipad ) {
     background-image: url(..//images/single_ipad.png);
@@ -30,6 +24,5 @@
   }
   @include breakpoint ( pc ) {
     background-image: url(..//images/single_pc.png);
-    height: 400px;
   }
 }

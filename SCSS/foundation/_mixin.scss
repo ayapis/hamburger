@@ -5,7 +5,7 @@
     }
   }
   @if $point == ipad {
-    @media ( min-width: 376px ) and ( max-width: 768px ) {
+    @media ( min-width: 376px ) {
       @content ;
     }
   }

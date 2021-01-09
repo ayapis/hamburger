@@ -495,7 +495,7 @@ body {
   width: 90%;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .l-aside.is-open {
     left: 55%;
     width: 45%;
@@ -642,7 +642,7 @@ body {
   }
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .l-header__search input[type="text"] {
     width: 23rem;
   }
@@ -683,7 +683,7 @@ body {
   }
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .l-header__search input[type="submit"] {
     width: 8rem;
   }
@@ -1013,7 +1013,7 @@ body {
   font-size: 2.8rem;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .c-title-menu, .c-title-single {
     font-size: 3.6rem;
   }
@@ -1033,7 +1033,7 @@ body {
   max-width: 1200px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .c-wrap-flexbox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1070,7 +1070,7 @@ body {
           justify-content: space-between;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .c-wrap-takeout {
     margin-right: 3%;
   }
@@ -1101,7 +1101,7 @@ body {
           justify-content: space-between;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .c-wrap-eatin {
     margin-left: 3%;
   }
@@ -1121,7 +1121,7 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .c-wrap-map {
     height: 600px;
   }
@@ -1188,7 +1188,7 @@ body {
   height: 270px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .p-hero {
     background-image: url(..//images/mainvisu_ipad.png);
   }
@@ -1202,21 +1202,11 @@ body {
 }
 
 .p-hero-single {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-image: url(..//images/single.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
   height: 200px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .p-hero-single {
     background-image: url(..//images/single_ipad.png);
     height: 400px;
@@ -1226,7 +1216,6 @@ body {
 @media (min-width: 769px) {
   .p-hero-single {
     background-image: url(..//images/single_pc.png);
-    height: 400px;
   }
 }
 
@@ -1254,7 +1243,7 @@ body {
   background: rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .p-map__layer2 {
     height: 100%;
   }
@@ -1511,7 +1500,7 @@ li.p-pagination__next a::before {
   height: 80px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .p-single .c-button {
     width: 60%;
     height: 100px;
@@ -1569,7 +1558,7 @@ li.p-pagination__next a::before {
   margin-bottom: 20px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .p-single-imageList img {
     width: 49%;
   }
@@ -1713,7 +1702,7 @@ li.p-pagination__next a::before {
   margin-bottom: 20px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .u-mb-menu {
     margin-bottom: 40px;
   }
@@ -1792,7 +1781,7 @@ li.p-pagination__next a::before {
   padding: 5rem 2rem;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 376px) {
   .u-pd-box-archive {
     padding: 2.4rem 3.5rem;
   }
