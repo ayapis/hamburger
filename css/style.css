@@ -930,11 +930,8 @@ body {
           transform: rotate(-45deg);
 }
 
-.c-title {
-  color: #fff;
-}
-
 .c-title-hero {
+  color: #fff;
   font-size: 3.6rem;
   line-height: 2rem;
 }
@@ -1147,6 +1144,8 @@ body {
 
 .p-box__content {
   background: rgba(255, 255, 255, 0.6);
+  margin-bottom: 15px;
+  padding: 2.4rem 1.0rem;
 }
 
 .p-course {
@@ -1771,10 +1770,6 @@ li.p-pagination__next a::before {
 
 .u-pd10 {
   padding: 10px;
-}
-
-.u-pd-box {
-  padding: 2.4rem 1.0rem;
 }
 
 .u-pd-box-archive {
