@@ -1289,8 +1289,21 @@ body {
 }
 
 .p-menu__intro {
+  padding: 5rem 2rem;
   color: #fff;
   background: #3C2B1C;
+}
+
+@media (min-width: 376px) {
+  .p-menu__intro {
+    padding: 2.4rem 3.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-menu__intro {
+    padding: 5rem 3.5rem;
+  }
 }
 
 .p-menu__intro h3 {
@@ -1781,22 +1794,6 @@ li.p-pagination__next a::before {
 
 .u-pd10 {
   padding: 10px;
-}
-
-.u-pd-box-archive {
-  padding: 5rem 2rem;
-}
-
-@media (min-width: 376px) {
-  .u-pd-box-archive {
-    padding: 2.4rem 3.5rem;
-  }
-}
-
-@media (min-width: 769px) {
-  .u-pd-box-archive {
-    padding: 5rem 3.5rem;
-  }
 }
 
 .u-aspectRatio {

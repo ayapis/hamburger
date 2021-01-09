@@ -9,6 +9,13 @@
 }
 
 .p-menu__intro {
+  padding: 5rem 2rem;
+  @include breakpoint ( ipad ) {
+    padding: 2.4rem 3.5rem;
+  }
+  @include breakpoint ( pc ) {
+    padding: 5rem 3.5rem;
+  }
   color: #fff;
   background: $color-bg;
   h3 {
