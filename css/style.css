@@ -721,7 +721,7 @@ body {
   font-size: 1.5rem;
   line-height: 3rem;
   border: 1px solid #707070;
-  border-radius: 5px;
+  border-radius: 20px;
   background: transparent -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#DED8D3));
   background: transparent linear-gradient(180deg, #F2EDE9 0%, #DED8D3 100%);
 }
@@ -807,6 +807,10 @@ body {
 
 .c-comment {
   line-height: 1.9;
+}
+
+.c-comment__bold {
+  font-weight: bold;
 }
 
 .c-date {
@@ -1478,6 +1482,11 @@ li.p-pagination__next a::before {
   font-style: normal;
 }
 
+.p-single blockquote cite a, .p-single pre cite a {
+  color: #4A6C9B;
+  text-decoration: underline;
+}
+
 .p-single img {
   width: 100%;
 }
@@ -1557,6 +1566,7 @@ li.p-pagination__next a::before {
 
 .p-single-imageList img {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 376px) and (max-width: 768px) {

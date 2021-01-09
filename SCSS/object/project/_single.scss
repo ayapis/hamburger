@@ -5,6 +5,10 @@
     padding: 30px 15px;
     cite {
       font-style: normal;
+      a {
+        color: #4A6C9B;
+        text-decoration: underline;
+      }
     }
   }
   img {
@@ -60,6 +64,7 @@
   justify-content: space-between;
   img {
     width: 100%;
+    margin-bottom: 20px;
     @include breakpoint ( ipad ) {
       width: 49%;
     }
