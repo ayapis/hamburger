@@ -1232,6 +1232,7 @@ body {
 @media (min-width: 769px) {
   .p-hero-archive {
     background-position: center center;
+    height: 240px;
   }
 }
 
