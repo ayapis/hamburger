@@ -2,4 +2,6 @@
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
+  // 下記の「16」を表示させたい行数に変更する。
+  // -webkit-line-clamp: 16;
 }

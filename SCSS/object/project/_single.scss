@@ -3,6 +3,17 @@
   blockquote, pre {
     background: #F5F5F5;
     padding: 30px 15px;
+    margin-bottom: 30px;
+    @include breakpoint ( ipad ) {
+      padding: 50px;
+      margin-bottom: 60px;
+    }
+    p {
+      margin-bottom: 30px;
+      @include breakpoint ( ipad ) {
+        margin-bottom: 60px;
+      }
+    }
     cite {
       font-style: normal;
       a {
@@ -13,6 +24,10 @@
   }
   img {
     width: 100%;
+    margin-bottom: 30px;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 60px;
+    }
   }
   table {
     width: 100%;
@@ -37,6 +52,24 @@
       width: 40%;
     }
   }
+  .c-comment {
+    margin-bottom: 40px;
+    @extend .row;
+    -webkit-line-clamp: 7;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 65px;
+      -webkit-line-clamp: 4;
+    }
+    @include breakpoint ( pc ) {
+      -webkit-line-clamp: 2;
+    }
+  }
+  h3, h4, h5, h6 {
+    margin-bottom: 35px;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 65px;
+    }
+  }
 }
 
 .p-single-intro {
@@ -55,13 +88,21 @@
   }
   p {
     width: 50%;
+    margin-bottom: 30px;
+    @extend .row;
+    -webkit-line-clamp: 6;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 120px;
+      -webkit-line-clamp: 14;
+    }
+    @include breakpoint ( pc ) {
+      margin-bottom: 60px;
+    }
   }
 }
 
 .p-single-imageList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 100%;
   img {
     width: 100%;
     margin-bottom: 20px;
@@ -71,6 +112,20 @@
     @include breakpoint ( pc ) {
       width: 33%;
     }
+  }
+  > img {
+   width: 70%;
+   max-width: 580px;
+   text-align: center;
+   margin: 0px auto 30px;
+   @include breakpoint ( ipad ) {
+     margin: 0px auto 60px;
+   }
+  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
