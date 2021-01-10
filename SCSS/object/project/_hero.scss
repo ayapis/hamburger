@@ -6,13 +6,13 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 270px;
+  height: 285px;
   @include breakpoint ( ipad ) {
     background-image: url(..//images/mainvisu_ipad.png);
   }
   @include breakpoint ( pc ) {
     background-image: url(..//images/mainvisu_pc.png);
-    height: 400px;
+    height: 530px;
   }
 }
 
