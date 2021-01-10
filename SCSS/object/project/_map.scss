@@ -26,11 +26,19 @@
 }
 
 .p-map__content {
+  padding: 40px;
   @include breakpoint ( pc ) {
     width: 50%;
+    padding: 90px 125px 130px 100px;
   }
 }
 
 .p-map__comment {
+  font-size: 1.4rem;
   line-height: 4rem;
+  @extend .row;
+  -webkit-line-clamp: 16;
+  @include breakpoint ( pc ) {
+    font-size: 1.6rem;
+  }
 }

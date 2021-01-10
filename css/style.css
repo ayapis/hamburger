@@ -478,6 +478,12 @@ body {
   overflow-x: hidden;
 }
 
+.row, .p-box__content p, .p-map__comment {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
 .l-aside {
   position: fixed;
   left: 100%;
@@ -1114,13 +1120,13 @@ body {
 .c-wrap-map {
   position: relative;
   width: 100%;
-  height: 1100px;
+  height: 850px;
   overflow: hidden;
 }
 
 @media (min-width: 376px) {
   .c-wrap-map {
-    height: 600px;
+    height: 500px;
   }
 }
 
@@ -1149,10 +1155,7 @@ body {
 }
 
 .p-box__content p {
-  display: -webkit-box;
-  overflow: hidden;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
 }
 
 .p-course {
@@ -1287,14 +1290,27 @@ body {
   }
 }
 
+.p-map__content {
+  padding: 40px;
+}
+
 @media (min-width: 769px) {
   .p-map__content {
     width: 50%;
+    padding: 90px 125px 130px 100px;
   }
 }
 
 .p-map__comment {
+  font-size: 1.4rem;
   line-height: 4rem;
+  -webkit-line-clamp: 16;
+}
+
+@media (min-width: 769px) {
+  .p-map__comment {
+    font-size: 1.6rem;
+  }
 }
 
 .p-menu img {

@@ -8,9 +8,7 @@
   margin-bottom: 15px;
   padding: 2.4rem 1.0rem;
   p {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    @extend .row;
+      -webkit-line-clamp: 3;
   }
 }
