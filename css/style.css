@@ -1209,6 +1209,27 @@ body {
 
 .p-hero-archive {
   background-image: url(..//images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+  position: relative;
+  background-size: auto;
+  background-position: top -580px left -350px;
+  z-index: 10;
+}
+
+.p-hero-archive::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  content: ' ';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+@media (min-width: 769px) {
+  .p-hero-archive {
+    background-position: center center;
+  }
 }
 
 .p-hero-single {
