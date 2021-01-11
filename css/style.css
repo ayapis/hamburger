@@ -1281,6 +1281,26 @@ body {
   }
 }
 
+.p-hero-page {
+  background-image: url(..//images/page_iphone.png);
+  height: 225px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 376px) {
+  .p-hero-page {
+    background-image: url(..//images/page_ipad.png);
+    height: 500px;
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: 769px) {
+  .p-hero-page {
+    background-image: url(..//images/page.png);
+  }
+}
+
 .p-map {
   height: 100%;
   position: absolute;

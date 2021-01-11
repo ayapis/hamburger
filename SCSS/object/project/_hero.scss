@@ -63,3 +63,17 @@
     background-image: url(..//images/single_pc.png);
   }
 }
+
+.p-hero-page {
+  background-image: url(..//images/page_iphone.png);
+  height: 225px;
+  margin-bottom: 35px;
+  @include breakpoint ( ipad ) {
+    background-image: url(..//images/page_ipad.png);
+    height: 500px;
+    margin-bottom: 65px;
+  }
+  @include breakpoint ( pc ) {
+    background-image: url(..//images/page.png);
+  }
+}
