@@ -1245,6 +1245,7 @@ body {
   .p-hero-archive {
     background-position: center center;
     height: 240px;
+    background-size: cover;
   }
 }
 
